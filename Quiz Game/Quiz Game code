@@ -1,0 +1,24 @@
+print("Welcome to the Quiz Game")
+count = 0
+playing = input("Do you want to play? ")
+
+if playing != "yes":
+    quit()
+
+print("Welcome to the Quiz Game")
+
+answer = input("What does CPU stand for? ")
+if answer == "Central Processing Unit":
+    print('Correct!')
+    count += 1
+else:
+    print('Incorrect!')
+
+answer = input("What does GPU stand for? ")
+if answer == "GPU Processing Unit":
+    print('Correct!')
+    count += 1
+else:
+    print('Incorrect!')
+
+print("You answered " + str(count) + " questions correctly")
